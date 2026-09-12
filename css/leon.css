@@ -1,0 +1,169 @@
+:root{
+    --main-color: #19cab7;
+
+
+
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+} 
+body{
+    font-family: 'Work Sans', sans-serif;
+/*end of font-family*/
+height: 1000px
+
+}
+/*end global rules*/
+
+.container{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*small devices*/
+@media (min-width: 768px) {
+    .container{
+        width: 750px;
+    }
+}
+/*medium devices*/
+@media (min-width: 992px){ 
+    .container{
+        width: 970px;
+    }
+}
+/*large devices*/
+@media (min-width: 1200px){
+    .container{
+        width: 1170px;
+    }
+}
+/*end global rules*/
+                /*starting header*/
+.header{
+padding: 20px;
+}
+.header .container{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.header .logo{
+width: 60px;
+height: 60px;
+}
+
+
+.header .links{
+
+position: relative;
+}
+.header .links .icon{
+display: flex;
+flex-wrap: wrap;
+width:30px;
+height: 30px;
+justify-content: flex-end;
+}
+.header .links .icon span{ 
+    background-color: #070000d4;
+    margin-bottom: 5px;
+    height: 2px;
+
+}
+.header .links .icon :first-child{
+width:100%;
+}
+
+.header .links .icon :nth-child(2){
+width: 60%;
+transition: 0.3s;
+}
+.header .links .icon :last-child{
+width:100%;
+
+}
+.header .links .icon:hover :nth-child(2){
+width: 100%;
+
+}
+
+.header .links ul{
+list-style: none;
+margin: 0;
+padding: 0;
+background-color: #bab5b5;
+position: absolute; 
+top: calc(100% + 10px);
+right: 0;
+display: none;
+
+min-width: 200px;
+}
+.header .links:hover ul{
+display: block;
+}
+.header .links ul::before{
+content: '';
+border-width: 10px;
+border-style: solid;
+border-color: transparent transparent #dbd0d0 transparent;
+position: absolute;
+right: 5px;
+top: -20px;
+}
+.header .links ul a{ 
+display: block;
+padding: 10px;
+text-decoration: none;
+color: #1a1919;
+transition: 0.3s;
+
+}
+.header .links ul a:hover{ 
+padding-left: 20px;
+
+}
+.header .links ul li:not(:last-child){
+border-bottom: 1px solid #0000003d;
+
+}
+                /*end header*/
+
+
+                /*landing section*/
+.landing{ 
+    background-image: url(../images/landing.webp);
+    width: 100%;
+    height:  calc(100% - 64px);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.landing .intro{
+    text-align: center;
+    width:320pz;
+    min-width: 100%;
+}
+.landing .intro h1{
+    text-align: center;
+    font-size: 50px;
+    margin: 0;
+    color: var(--main-color);
+    padding-bottom: 20px;
+}
+.landing .intro p{
+    font-size: 20px;
+    margin: 0;
+    color: var(--main-color);
+}
+                
