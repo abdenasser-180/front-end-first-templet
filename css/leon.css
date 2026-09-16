@@ -26,7 +26,7 @@ height: 1000px
 /*end global rules*/
 /* start component */
 .special-heading{
-    margin: 0;
+    margin-top: 20px;
     text-align: center;
     font-size: 30px;
     font-weight: 800;
@@ -40,10 +40,6 @@ height: 1000px
     margin: 0;
     padding-bottom: 20px;
 }
-@media (max) {
-    
-}
-
 
 
 /* end component */
@@ -436,6 +432,11 @@ font-size: 18px;
 margin-left: 20px;
 color: var(--second-color);
 margin-top: 18px;
+font-size: 30px;
+}
+.contact .info .social i :first-of-type{
+margin-left: 60px;
+
 }
 .contact .info .social i::hover{
 transform: translateY(10%);
@@ -443,11 +444,28 @@ transform: translateY(10%);
 @media(max-width:767px){
 .contact .info .lable,.contact .info .link{
 
-font-size: 10px;
+font-size: 15px;
 
 }
 
-    
+
+.About .About-content .image{
+
+width: 0;
+height: 0;
+
+}
+.About .About-content .image::after{
+width: 0;
+height: 0;
+background-color: transparent;
+display: none;
+}
+.footer{
+margin-bottom: 5px;
+
+
+}
 }
 
 /* end contact */
